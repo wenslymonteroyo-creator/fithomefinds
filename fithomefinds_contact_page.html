@@ -1,0 +1,99 @@
+
+<style>
+.page-wrap2 { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; background: var(--color-background-primary); }
+.pg-header { background: #2E7D32; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+.pg-logo { font-size: 18px; font-weight: 500; color: #fff; }
+.pg-nav { display: flex; gap: 18px; }
+.pg-nav a { font-size: 13px; color: rgba(255,255,255,0.85); text-decoration: none; }
+.pg-hero { background: #EAF3DE; padding: 24px 32px 20px; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.pg-hero h1 { font-size: 22px; font-weight: 500; color: #27500A; margin: 0 0 5px; }
+.pg-hero p { font-size: 13px; color: #3B6D11; margin: 0; }
+.pg-body { padding: 24px 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.contact-info h2 { font-size: 15px; font-weight: 500; margin: 0 0 12px; color: var(--color-text-primary); }
+.contact-item { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 14px; }
+.contact-icon { width: 32px; height: 32px; border-radius: var(--border-radius-md); background: #EAF3DE; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #3B6D11; font-size: 16px; }
+.contact-label { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px; }
+.contact-val { font-size: 12px; color: var(--color-text-secondary); margin: 0; }
+.resp-note { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px; margin-top: 16px; }
+.resp-note p { font-size: 12px; color: var(--color-text-secondary); margin: 0; line-height: 1.6; }
+.form-section h2 { font-size: 15px; font-weight: 500; margin: 0 0 14px; color: var(--color-text-primary); }
+.form-group { margin-bottom: 12px; }
+.form-label { font-size: 12px; font-weight: 500; color: var(--color-text-secondary); display: block; margin-bottom: 5px; }
+.form-group input, .form-group select, .form-group textarea { width: 100%; box-sizing: border-box; font-size: 13px; }
+.form-group textarea { height: 90px; resize: vertical; }
+.submit-btn { width: 100%; padding: 10px; background: #2E7D32; color: #fff; border: none; border-radius: var(--border-radius-md); font-size: 14px; font-weight: 500; cursor: pointer; margin-top: 4px; }
+@media (max-width: 500px) { .pg-body { grid-template-columns: 1fr; } }
+</style>
+<h2 class="sr-only">FitHomeFinds Contact page mockup with form</h2>
+<div class="page-wrap2">
+  <div class="pg-header">
+    <span class="pg-logo"><i class="ti ti-leaf" aria-hidden="true" style="margin-right:6px"></i>FitHomeFinds</span>
+    <nav class="pg-nav"><a href="#">Home</a><a href="#">Reviews</a><a href="#">About</a><a href="#" style="color:#fff;font-weight:500">Contact</a></nav>
+  </div>
+  <div class="pg-hero">
+    <h1>Get in touch</h1>
+    <p>Have a question, suggestion, or want to work together? I'd love to hear from you.</p>
+  </div>
+  <div class="pg-body">
+    <div class="contact-info">
+      <h2>Ways to reach me</h2>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
+        <div>
+          <p class="contact-label">Email</p>
+          <p class="contact-val">hello@fithomefinds.com</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="ti ti-clock" aria-hidden="true"></i></div>
+        <div>
+          <p class="contact-label">Response time</p>
+          <p class="contact-val">Usually within 1–2 business days</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="ti ti-brand-facebook" aria-hidden="true"></i></div>
+        <div>
+          <p class="contact-label">Facebook page</p>
+          <p class="contact-val">facebook.com/fithomefinds</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon"><i class="ti ti-ban" aria-hidden="true"></i></div>
+        <div>
+          <p class="contact-label">What I don't accept</p>
+          <p class="contact-val">Paid reviews, sponsored posts, or link insertions</p>
+        </div>
+      </div>
+      <div class="resp-note">
+        <p><strong style="color:var(--color-text-primary)">Note:</strong> I read every message personally. For product recommendations, please browse the Reviews section first — your answer might already be there!</p>
+      </div>
+    </div>
+    <div class="form-section">
+      <h2>Send a message</h2>
+      <div class="form-group">
+        <label class="form-label">Your name</label>
+        <input type="text" placeholder="Juan dela Cruz">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email address</label>
+        <input type="email" placeholder="you@email.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Subject</label>
+        <select>
+          <option>Product question</option>
+          <option>Blog feedback</option>
+          <option>Collaboration inquiry</option>
+          <option>Report a broken link</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Message</label>
+        <textarea placeholder="Write your message here..."></textarea>
+      </div>
+      <button class="submit-btn">Send message</button>
+    </div>
+  </div>
+</div>
